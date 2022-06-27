@@ -1,4 +1,4 @@
-import wordBank from "./BancoPalavras.txt";
+import {wordBank} from "./BancoPalavras.txt";
 export const boardDefault=[ 
     ["","","","",""],
     ["","","","",""],

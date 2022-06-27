@@ -10,8 +10,11 @@ function App(){
     const [board, setBoard]= useState(boardDefault);
     const [currAttempt, setCurrAttempt]=useState({attempt:0, letterPos:0})
     const [wordSet,setWordSet]= useState(new Set());
-    
+   
     const correctWord= "RIGHT"
+
+   
+   
 
     useEffect(() => {
       generateWordSet().then((words) => {
@@ -49,9 +52,11 @@ function App(){
       };
     }
   return (
+        
       <div  className="App">
           <nav>
-              <h1>Charada</h1>
+              <h1>Charada</h1> 
+              
           </nav>
             <AppContext.Provider value={{board, setBoard,currAttempt, setCurrAttempt, onSelectLetter, onDelete, onEnter, correctWord,}}>
               <div className= "game">
