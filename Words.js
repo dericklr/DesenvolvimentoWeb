@@ -9,7 +9,7 @@ export const boardDefault=[
   ];
   export const generateWordSet= async()=>{
     let wordSet;
-    await fetch(palavras)
+    await fetch()
     .then((response)=>response.text())
     .then((result)=>{
       const wordArr= result.split("\n")
